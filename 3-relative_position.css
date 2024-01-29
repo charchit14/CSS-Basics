@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+/* Starting the CSS from here */
+/* Understanding position (relative) */
+#outer_box{
+    width: 400px;
+    height: 300px;
+    background-color: pink;
+    position: relative;
+}
+
+#inner_box{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    left: 40%;
+    position: absolute;
+}
+
+/* First, we defined the position of inner box as absoulte
+which means when we use left, top then it will move accordingly.
+But, when we define the outer box's position as relative then whatever
+the top, left values are used in the inner box, they will be relative to the outer box.
+And hence, the inner box will always be inside the outer box. */

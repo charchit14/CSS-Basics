@@ -1,0 +1,89 @@
+/* Firstly, writing Boiler plate for CSS */
+/* Reseting the browser's default margins, paddings */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* To ensure that these elements take up entire viewport's width and height */
+/* This is commonly desired for responsive designs */
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Writing the main CSS from here */
+/* 
+NOTE: To taget class use .
+To target id use # 
+*/
+
+/* Understanding width and height */
+.main{
+    width: 50%;
+    height: 50%;
+    background-color: black;
+}
+
+/* Units (pixels and percentage) */
+#secondary{
+    width: 40px;
+    height: 40px;
+    background-color: blue;
+}
+
+/* Margin */
+/* Margin is the space between two elements */
+
+#tertiary{
+    height: 60px;
+    width: 60px;
+    background-color: green;
+    margin: 30px;   /* This gives 30px margin on all sides */
+}
+
+#para{
+    margin-left: 900px; /* Will give 900px margin on left */
+
+    /* This won't effect because there is no other elements on right or bottom */
+    /* margin-bottom: 80px;
+    margin-right: 40px; */
+}
+
+#box{
+    width: 35px;
+    height: 35px;
+    margin: 30px 40px 90px 20px; /* The order for this is top, right, bottom, left (clock-wise direction) */
+    background-color: gold;
+}
+
+#bottom{
+    width: 45px;
+    height: 45px;
+    margin: 40px 50px; /* This means 40px for top & bottom and the other 50px for right & left */ 
+    background-color: pink;
+}
+
+/* Padding */
+/* Padding is the space in the element itself */
+#writing{
+    width: 100px;
+    height: 100px;
+    background-color: skyblue;
+    /* Before padding the text is inside this division at some position */
+    /* After this padding the position of text will change according to the padding */
+    padding: 20px;
+    /* So, padding is like imaginary border inside the element */
+}
+
+/* Images */
+.pic{
+    width: 900px;
+    height: 900px;
+    margin-left: 450px;
+    background-image: url(https://plus.unsplash.com/premium_photo-1683910767532-3a25b821f7ae?q=80&w=2008&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover; /* This makes sure that the image is contained within the defined dimensions */
+    /* background-position: top; */ /* If the image is too big, this is used to see the certain part of the image be it top, bottom or center  */
+}

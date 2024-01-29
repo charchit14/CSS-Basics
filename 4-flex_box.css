@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+/* CSS from here */
+/* Understanding Flex Box */
+/* To align according to width or height use as follows: 
+width: justify content
+height: align items */
+
+#box{
+    width: 600px;
+    height: 600px;
+    background-color: black;
+    /* By default all the children boxes i.e. box1, box2, box3
+    will align below one another so, as to align sideways we write display: flex 
+    We use this display: flex in the parent div (not in the children)*/
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: start; */
+    justify-content: space-between;
+}
+
+#box1{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+}
+
+#box2{
+    width: 60px;
+    height: 60px;
+    background-color: blue;
+}
+
+#box3{
+    width: 70px;
+    height: 70px;
+    background-color: green;
+}
